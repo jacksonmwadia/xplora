@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* *{
+    padding: 0px;
+    margin: 0px;
+} */
+
+
+:root {
+    --main-color: #5fafcc;
+    --color-dark: #154c79;
+    --text-grey: #0d0f75;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: "Merriweather", sans-serif;
+  }

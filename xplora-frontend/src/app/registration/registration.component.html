@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+
+
+<body>
+  <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+        <label for="name">Name:</label>
+        <input  type="text" id="name" name="name" formControlName="name" placeholder="Enter your full name" required>
+        <div *ngIf="signUpForm.get('name')?.errors?.['required'] && signUpForm.get('name')?.touched" class="error-message">
+          UserName is required.</div>
+          
+        <label for="email">Email:</label>
+        <input  type="text" id="email" name="email" formControlName="email" placeholder="example@example.com" required>
+
+        <label for="phoneNumber">Phone number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" formControlName="phoneNumber" placeholder="Enter your phone number" required>
+        <div *ngIf="signUpForm.get('phoneNumbder')?.errors?.['required'] && signUpForm.get('phoneNumbder')?.touched" class="error-message">
+          UserName is required.</div>
+        <label for="nationalId">National ID:</label>
+        <input type="text" id="nationalId" name="nationalId" formControlName="nationalId" placeholder="Enter your phone number" required>
+        <div *ngIf="signUpForm.get('nationalId')?.errors?.['required'] && signUpForm.get('nationalId')?.touched" class="error-message">
+          UserName is required.</div>
+        <label for="gender">Gender:</label>
+        <input type="text" id="gender" name="gender" formControlName="gender" placeholder="Enter your phone number" required>
+        <div *ngIf="signUpForm.get('gender')?.errors?.['required'] && signUpForm.get('gender')?.touched" class="error-message">
+          UserName is required.</div>
+         <label for="occupation">Occupation:</label>
+         <input type="text" id="occupation" name="occupation" formControlName="occupation" placeholder="Enter your phone number" required>
+         <div *ngIf="signUpForm.get('occupation')?.errors?.['required'] && signUpForm.get('occupation')?.touched" class="error-message">
+          UserName is required.</div>
+        <label for="nationality">Nationality:</label>
+          <input type="text" id="nationality" name="nationality" formControlName="nationality" placeholder="Enter your phone number" required>
+          <div *ngIf="signUpForm.get('nationality')?.errors?.['required'] && signUpForm.get('nationality')?.touched" class="error-message">
+            UserName is required.</div>
+          <label for="location">Location:</label>
+          <input type="text" id="location" name="location" formControlName="location" placeholder="Enter your phone number" required>
+          <div *ngIf="signUpForm.get('location')?.errors?.['required'] && signUpForm.get('location')?.touched" class="error-message">
+            UserName is required.</div>
+          <label for="dob">Date of Birth:</label>
+        <input type="date" id="dateOfBirth" name="dateOfBirth" formControlName="dateOfBirth" placeholder="Enter your phone number" required>
+        <div *ngIf="signUpForm.get('dateOfBirth')?.errors?.['required'] && signUpForm.get('dateOfBirth')?.touched" class="error-message">
+          UserName is required.</div>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" formControlName="password" placeholder="Enter your nationality" required>
+        <div *ngIf="signUpForm.get('password')?.errors?.['required'] && signUpForm.get('password')?.touched" class="error-message">
+          UserName is required.</div>
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+<app-footer></app-footer>
+
+

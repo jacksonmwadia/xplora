@@ -1,0 +1,112 @@
+header{
+	width: 100%;
+	height: 100vh;
+	/* background: url(images/Adams-Peak-2.jpg); */
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	
+}
+nav{
+	width: 100%;
+	height: auto;
+	color: #fff;
+	z-index: 999;
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+
+
+}
+.upper_navbar{
+	background-color: #112255; 
+}
+.menu1{
+	width: 90%;
+	margin: 0 auto;
+}
+.menu1 ul{
+	padding: 0;
+	margin: 0;
+	display: inline-flex;
+}
+.menu1 ul li{
+	list-style-type: none;
+	display: inline-block;
+	line-height: 40px;
+	padding: 0px 20px;
+}
+.menu1 ul li a{
+	color: #fff;
+	font-size: 10pt;
+	text-decoration: none;
+}
+.menu1 ul li:hover{
+	background-color: #0a9cc9;
+	transition: 0.3s;
+}
+.menu-icon{
+	display: none;
+}
+/*//////////////////////////lower navbar\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.lower_navbar{
+	width: 100%;
+	height: 70px;
+	color: #fff;
+	background-color: rgba(0,0,0,0.7);
+}
+.lower_navbar_content{
+	width: 85%;
+	margin: 0 auto;
+}
+.lower_navbar .logo{
+	float: right;
+	height: 50px;
+	padding: 10px 0px;
+}
+.lower_navbar .logo img{
+	width: auto;
+	height: 100%;
+}
+.lower_navbar .dropdown-menu{
+	width: 40%;
+}
+.lower_navbar .dropdown-menu , .lower_navbar .dropdown-menu ul{
+	position: absolute;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.lower_navbar .dropdown-menu li a, .lower_navbar .dropdown-menu ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+.lower_navbar .dropdown-menu li{
+	display: inline-block;
+	padding: 25px 0;
+	transition: 0.3s;
+}
+.lower_navbar .dropdown-menu li:hover{
+	background: #444;
+}
+.lower_navbar .dropdown-menu li a{
+	padding: 20px;
+}
+.lower_navbar .dropdown-menu ul{
+	display: none;
+	margin-top: 25px;
+}
+.lower_navbar .dropdown-menu ul li{
+	padding: 15px 0px;
+	display: block;
+	background: #000;
+}
+.lower_navbar .dropdown-menu ul li:hover{
+	background: #333;
+}
+.lower_navbar .dropdown-menu li:hover ul{
+	display: block;
+}
+.fas{
+	padding-left: 8px;
+}
